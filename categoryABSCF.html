@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-wrapper">
+        <div class="container">
+          <ul class="theme-list">
+            <li class="theme-item">
+              <button class="theme-button">
+                <img class="theme-img" src="./images/theme-light.png" alt="" />
+              </button>
+            </li>
+            <li class="theme-item">
+              <button class="theme-button">
+                <img class="theme-img" src="./images/theme-dark.png" alt="" />
+              </button>
+            </li>
+          </ul>
+          <ul class="lang-list">
+            <li class="lang-item">
+              <button class="lang-button">
+                <img class="lang-img" src="./images/ukraine.png" alt="" />
+              </button>
+            </li>
+            <li class="lang-item">
+              <button class="lang-button">
+                <img class="lang-img" src="./images/united-states.png" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="middle-wrapper">
+        <div class="container">
+          <div class="logo-wrapper">
+            <a href="/index.html" class="logo-link">LOGO</a>
+          </div>
+          <ul class="phone-list-header">
+            <li class="phone-item">
+              <a href="tel:+380671111111" class="phone-link-header"
+                >+38(067) 111-11-11</a
+              >
+            </li>
+            <li class="phone-item">
+              <a href="tel:+380671111111" class="phone-link-header"
+                >+38(067) 111-11-11</a
+              >
+            </li>
+            <li class="callback">
+              <button class="callback-button-header">Передзвонити вам?</button>
+            </li>
+          </ul>
+          <div class="work-cart-wrapper">
+            <div class="working-hours-wrapper">
+              <h3 class="working-hours-title">Графік роботи</h3>
+              <p class="working-hours top"><span>ПН-ПТ:</span> 09:00–18:00</p>
+              <p class="working-hours"><span>СБ-НД: </span>Вихідний</p>
+            </div>
+            <button class="cart-button">
+              <img class="cart-img" src="/images/shopping-cart.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-wrapper">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="./delivery.html" class="nav-link">Оплата і доставка</a>
+            </li>
+            <li class="nav-item">
+              <a href="./exchange.html" class="nav-link">Обмін та повернення</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacts.html" class="nav-link"
+                >Контактна інформація</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./conditions.html" class="nav-link">Умови угоди</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="callback-backdrop">
+        <div class="callback-modal">
+          <div class="close-btn-wrapper">
+            <img class="cross-img" src="./images/close.png" alt="" />
+          </div>
+          <h2 class="form-title">Передзвонити вам?</h2>
+          <p class="form-text">
+            Вкажіть ваш номер телефону та ім'я. Ми зателефонуємо вам найближчим
+            часом.
+          </p>
+          <form class="callback-form">
+            <div class="form-inner-wrapper">
+              <div class="input-wrapper">
+                <label for="name" class="label"> Ім'я </label>
+                <input
+                  type="text"
+                  class="callback-input"
+                  placeholder="Вкажіть ваше ім'я"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="phone" class="label"> Телефон </label>
+                <input
+                  type="text"
+                  class="callback-input"
+                  placeholder="Вкажіть ваш телефон"
+                  name="phone"
+                  id="phone"
+                />
+              </div>
+            </div>
+            <button class="callback-btn">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-top-wrapper">
+          <div class="logo-footer-wrapper">
+            <a href="/index.html" class="logo-link-footer">LOGO</a>
+          </div>
+          <p class="rights-text">© 2024 shop.com.ua</p>
+        </div>
+
+        <div class="contact-info-wrapper">
+          <h3 class="contact-info-title">Контактна інформація</h3>
+          <ul class="phone-list">
+            <li class="phone-item">
+              <div class="phone-img-wrapper">
+                <img class="phone-img" src="./images/phone-call.png" alt="" />
+              </div>
+              <a href="tel:+380671111111" class="phone-link"
+                >+38(067) 111-11-11</a
+              >
+            </li>
+            <li class="phone-item pad">
+              <a href="tel:+380671111111" class="phone-link"
+                >+38(067) 111-11-11</a
+              >
+            </li>
+            <li class="callback pad">
+              <button class="callback-button">Передзвонити вам?</button>
+            </li>
+          </ul>
+        </div>
+        <ul class="sm-list">
+          <li class="sm-item">
+            <div class="sm-img-wrapper">
+              <img class="sm-img" src="./images/telegram.png" alt="" />
+            </div>
+            <a class="sm-link" href="">Telegramm</a>
+          </li>
+          <li class="sm-item">
+            <div class="sm-img-wrapper-envelope">
+              <img class="sm-img-envelope" src="./images/envelope.png" alt="" />
+            </div>
+            <a class="sm-link" href="mailto:shop@kiev.ua">shop@kiev.ua</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./callback.js"></script>
+</html>

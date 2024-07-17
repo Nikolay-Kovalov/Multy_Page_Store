@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- <link
+      href="
+https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+"
+      rel="stylesheet"
+    /> -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="middle-wrapper">
+      <div class="container">
+        <div class="logo-wrapper">
+          <a href="/index.html" class="logo-link">LOGO</a>
+        </div>
+        <div class="callback-wrapper">
+          <ul class="phone-list-header">
+            <li class="phone-item"><a href="tel:+380671111111" class="phone-link-header">+38 ( 067 ) - 123 - 45 - 67</a>
+            </li>
+            <li class="phone-item"><a href="tel:+380671111111" class="phone-link-header">+38 ( 067 ) - 123 - 45 - 67</a>
+            </li>
+          </ul>
+          <button class="callback-button-header">Передзвонити вам?</button>
+        </div>
+        <div class="work-cart-wrapper">
+          <div class="working-hours-wrapper">
+            <h3 class="working-hours-title">Графік роботи</h3>
+            <p class="working-hours top"><span>ПН-ПТ:</span> 09:00–18:00</p>
+            <p class="working-hours"><span>СБ-НД: </span>Вихідний</p>
+          </div>
+          <div class="icons-wrapper">
+            <img width="22" height="22" src="./images/pngwing.com.png" alt="">
+            <button class="cart-button"><img width="22" height="22" class="icon-cart"
+                src="./images/shopping-cart-512.png" alt=""></button>
+            <div class="theme-wrapper">
+              <div class="icon-sun-wrapper"><img width="16" height="16" class="icon-sun" src="./images/sun.png" alt="">
+              </div>
+              <div class="icon-moon-wrapper"> <img width="16" height="16" class="icon-moon" src="./images/moon.png"
+                  alt=""></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-wrapper">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./about.html" class="nav-link">Про нас</a></li>
+          <li class="nav-item">
+            <a href="./delivery.html" class="nav-link">Оплата і доставка</a>
+          </li>
+          <li class="nav-item">
+            <a href="./exchange.html" class="nav-link">ГАРАНТІЯ ТА ЯКІСТЬ</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contacts.html" class="nav-link">Контактна інформація</a>
+          </li>
+          <li class="nav-item">
+            <a href="./conditions.html" class="nav-link">ПРОГРАМА ЛОЯЛЬНОСТІ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="in-cart-backdrop">
+      <div class="in-cart-modal">
+        <p class="in-cart-text">Цей товар вже у Вашому кошику</p>
+        <button class="in-cart-btn">До покупок</button>
+      </div>
+    </div>
+    <div class="callback-backdrop">
+      <div class="callback-modal">
+        <div class="close-btn-wrapper">
+          <img class="cross-img" src="./images/close.png" alt="" />
+        </div>
+        <h2 class="form-title">Передзвонити вам?</h2>
+        <p class="form-text">
+          Вкажіть ваш номер телефону та ім'я. Ми зателефонуємо вам найближчим
+          часом.
+        </p>
+        <form class="callback-form">
+          <div class="form-inner-wrapper">
+            <div class="input-wrapper">
+              <label for="name" class="label"> Ім'я </label>
+              <input type="text" class="callback-input" placeholder="Вкажіть ваше ім'я" name="name" id="name" />
+            </div>
+            <div class="input-wrapper">
+              <label for="phone" class="label"> Телефон </label>
+              <input type="text" class="callback-input" placeholder="Вкажіть ваш телефон" name="phone" id="phone" />
+            </div>
+          </div>
+          <button class="callback-btn">Надіслати</button>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop">
+      <div class="notification-wrapper">
+        <p class="notification">
+          Дякуємо за ваше замовлення! Наш менеджер зв'яжеться з вами
+          найближчим часом
+        </p>
+        <button class="notification-btn">Зрозуміло</button>
+      </div>
+      <div class="modal">
+        <h2 class="cart-title">Корзина</h2>
+        <ul class="cart-items-wrapper"></ul>
+        <p class="total-cart-price-text">
+          Всього:<span class="total-cart-price"></span>
+        </p>
+
+        <!-- <ul class="cart-list">
+            <li class="cart-item">
+              <img
+                class="cart-item-img"
+                src="./images/catalog-item2.webp"
+                alt=""
+              />
+              <div class="cart-inner-wrapper">
+                <div class="cart-single-item-wrapper">
+                  <div>
+                    <h3 class="cart-item-title">
+                      NYLON пластик для 3D принтера черный 300м / 0.825кг
+                      /1.75мм
+                    </h3>
+                    <p class="cart-item-price">760.00 грн</p>
+                  </div>
+                  <div class="counter">
+                    <button class="decrement counter-btn">-</button
+                    ><span class="count-number"></span
+                    ><button class="increment counter-btn">+</button>
+                  </div>
+                  <p class="cart-item-total-price">760.00 грн</p>
+                </div>
+              </div>
+            </li>
+          </ul> -->
+        <!-- <p class="total-cart-price">Всього<span>760.00 грн</span></p> -->
+        <form class="cart-form">
+          <div class="input-cart-wrapper">
+            <input class="input" type="text" name="name" placeholder="Вкажіть ваше ім'я" />
+            <input class="input" type="text" name="name" placeholder="Вкажіть ваш телефон" />
+          </div>
+          <button class="order">Оформити замовлення</button>
+        </form>
+        <button class="cross-close-btn">X</button>
+      </div>
+    </div>
+    <section class="item-details">
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a href="./index.html" class="breadcrumbs-link">Головна</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <span class="breadcrumbs-last">
+              > ABS пластик для 3D принтера</span>
+          </li>
+        </ul>
+        <div class="item-details-wrapper">
+          <div class="img-details-wrapper">
+            <img class="item-details-img" src="images/catageryABS-1.webp" alt="" />
+          </div>
+          <div class="item-details-info-wrapper">
+            <div class="item-details-title-wrapper">
+              <h1 class="item-details-title">
+                PETG/CoPET пластик
+              </h1>
+              <!-- <span class="item-details-title-size">400м / 1кг / 1.75мм</span> -->
+            </div>
+            <div class="item-details-available-info">
+              <p class="available">Є в наявності</p>
+              <!-- <p class="art">Артикул: ABS-107400</p> -->
+            </div>
+            <div class="price-wrapper">
+              <p class="item-details-price">570.00</p>
+              <span>ГРН</span>
+            </div>
+            <div class="info-wrapper">
+              <h2 class="length-title">Довжина / Вага</h2>
+              <ul class="length-list">
+                <li class="length-item">
+                  <button class="length-btn js-300">300м. / 0.75кг.</button>
+                </li>
+                <li class="length-item">
+                  <button class="length-btn js-400">400м. / 1кг.</button>
+                </li>
+                <li class="length-item">
+                  <button class="length-btn js-100">100м. / 0.25кг.</button>
+                </li>
+              </ul>
+              <ul class="color-list">
+                <li class="color-wrapper">
+                  <div class="color-item green"></div>
+                </li>
+                <li class="color-wrapper active-color">
+                  <div class="color-item blue"></div>
+                </li>
+                <li class="color-wrapper">
+                  <div class="color-item yellow"></div>
+                </li>
+              </ul>
+              <button class="buy-btn">Купити</button>
+            </div>
+            <h2 class="charecteristic-title">Характеристики</h2>
+            <table>
+              <tr>
+                <th class="thead" scope="row">Виробник</th>
+                <td class="tdata">Plexiwire</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Країна-виробник товару</th>
+                <td class="tdata">Україна</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Матеріал</th>
+                <td class="tdata">ABS</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Колір</th>
+                <td class="tdata">Синій</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Діаметр нитки</th>
+                <td class="tdata">1,75 мм</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Экструдер</th>
+                <td class="tdata">235°С-250°С</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Стіл</th>
+                <td class="tdata">90°С-110°С</td>
+              </tr>
+              <tr>
+                <th class="thead" scope="row">Примітка</th>
+                <td class="tdata">
+                  Відтінок кольору філамента може відрізнятися від партії до
+                  партії. Ви можете запитати фото з поточним відтінком у
+                  менеджера.
+                </td>
+              </tr>
+            </table>
+            <div class="delivery-bts-wrapper">
+              <button class="deliv-btn">Доставка</button>
+              <button class="pay-btn">Оплата</button>
+            </div>
+            <ul class="delivery-list">
+              <li class="delivery-item">- Новою поштою по Україні</li>
+              <li class="delivery-item">- Укрпошта</li>
+            </ul>
+            <ul class="pay-list">
+              <li class="pay-item">- Онлайн-оплата банківською карткою</li>
+              <li class="pay-item">- Оплата на карту Приватбанку</li>
+              <li class="pay-item">- Безготівковий розрахунок</li>
+              <li class="pay-item">- Післяплата</li>
+              <li class="pay-item">- Наложений платіж НП</li>
+            </ul>
+            <a class="delivery-link" href="./delivery.html">Більше інформації про доставку</a>
+          </div>
+        </div>
+        <div class="separate-line"></div>
+        <h2 class="description-title">Опис</h2>
+        <h3 class="desc-subtitle">Plexiwire ABS Filament</h3>
+        <p class="desc-text">
+          Філамент ABS один з пластиків, які найбільш широко використовуються.
+          Його основні переваги - це висока механічна міцність і стійкість до
+          впливу агресивних речовин.При відсутності впливу прямих сонячних
+          променів, вироби з ABS служать дуже довго. Тому його використовують
+          для виробництва деталей, які можуть відчувати висое статичне
+          навантаження. Пластик доступний в 16 кольорах.
+        </p>
+        <h3 class="desc-subtitle">Застосування</h3>
+        <p class="desc-text">
+          ABS має величезну кількість застосувань. Серед них можна відзначити:
+          корпуси для електроніки, побутових приладів, деталі автомобілів,
+          медичне обладнання, дитячі іграшки, спортивне спорядження, домашні
+          господарські вироби, труби і фітинги, і багато іншого. В цілому
+          пластик відмінно підходить для загального моделювання та
+          прототипування в усіх сферах промисловості і дизайну, а також для
+          створення деталей машин і механізмів, де в першу чергу потрібна
+          висока механічна міцність.
+        </p>
+        <h3 class="desc-subtitle">Рекомендації при друку ABS</h3>
+        <p class="desc-text">
+          Важливо підготувати стіл до друку, забезпечивши добре прилипання
+          першого шару, іноді буде складно уникнути загнутих країв моделі.
+          Підійдуть будь-які засоби, які є під рукою або рекомендуються
+          ентузіастами 3Д-друку: від лаку для волосся до малярської стрічки.
+          При цьому знімати добре приклеєную модель теж потрібно акуратно -
+          допомагає хороший будівельний шпатель. Під час друку важливо
+          закривати принтер або область друку, щоб виключити вплив зовнішніх
+          факторів. Дуже важливо усунути протяги або обдув - вони можуть
+          погіршити адгезію, особливо у великих моделей. Також для кращої
+          якості друку краще друкувати на швидкості не вище 50-60 мм / с. Це
+          дасть шарам можливість краще склеюватись. При цьому також важливо
+          забезпечити вентиляцію приміщення або покинути кімнату під час
+          процесу друку - при плавленні ABS виділяються токсичні речовини,
+          шкідливі для людини. Рекомендований рівень заповнення моделі -
+          95-96%. При більш високому заповненні внутрішнє напруження викликає
+          викривлення деталі і знижує точність розмірів. Постобробку проводять
+          діхлорметаном, ацетоном та іншими речовинами. В першу чергу це
+          дозволяє згладити поверхню і додати глянець, хоча також може
+          поліпшити адгезію
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-top-wrapper">
+        <div class="logo-footer-wrapper">
+          <a href="/index.html" class="logo-link-footer">LOGO</a>
+        </div>
+        <p class="rights-text">© 2024 shop.com.ua</p>
+      </div>
+
+      <div class="contact-info-wrapper">
+        <h3 class="contact-info-title">Контактна інформація</h3>
+        <ul class="phone-list">
+          <li class="phone-item">
+            <div class="phone-img-wrapper">
+              <img class="phone-img" src="./images/phone-call.png" alt="" />
+            </div>
+            <a href="tel:+380671111111" class="phone-link">+38(067) 111-11-11</a>
+          </li>
+          <li class="phone-item pad">
+            <a href="tel:+380671111111" class="phone-link">+38(067) 111-11-11</a>
+          </li>
+          <li class="callback pad">
+            <button class="callback-button">Передзвонити вам?</button>
+          </li>
+        </ul>
+      </div>
+      <ul class="sm-list">
+        <li class="sm-item">
+          <div class="sm-img-wrapper">
+            <img class="sm-img" src="./images/telegram.png" alt="" />
+          </div>
+          <a class="sm-link" href="">Telegramm</a>
+        </li>
+        <li class="sm-item">
+          <div class="sm-img-wrapper-envelope">
+            <img class="sm-img-envelope" src="./images/envelope.png" alt="" />
+          </div>
+          <a class="sm-link" href="mailto:shop@kiev.ua">shop@kiev.ua</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script type="module" src="./index.js"></script>
+<script type="module" src="./itemDetails.js"></script>
+<script type="module" src="./cart.js"></script>
+<script type="module" src="./callback.js"></script>
+
+</html>
