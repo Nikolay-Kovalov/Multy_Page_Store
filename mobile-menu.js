@@ -6,6 +6,6 @@ const mobileModal = document.querySelector('.mobile-modal');
 burgerBtn.addEventListener('click', handleOpenBurger);
 
 function handleOpenBurger(){
-// mobileBackdrop.classList.add('burger-active');
 mobileModal.classList.add('burger-active');
+document.body.style.overflow = "hidden";
 }
