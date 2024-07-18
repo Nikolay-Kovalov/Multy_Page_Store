@@ -1,4 +1,5 @@
 * {
+
     box-sizing: border-box;
 }
 
@@ -281,7 +282,6 @@ margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
-       
         width: 32px;
         height: 32px;
         padding: 4px;
@@ -312,7 +312,7 @@ margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         /* gap: 24px; */
         position: fixed;
         padding: 24px;
@@ -325,10 +325,9 @@ margin: 0 auto;
         transition: all 0.4s ease;
         z-index: 100000;
         overflow: hidden;
-       
     }
 
-    .close-btn{
+    .close-btn-mobile{
         position: absolute;
         border: none;
         border-radius: 50%;
@@ -337,6 +336,7 @@ margin: 0 auto;
         right: 24px;
         top: 24px;
         font-size: 20px;
+        cursor: pointer;
     }
 
     .burger-active{
@@ -377,9 +377,7 @@ margin: 0 auto;
     /* hero */
     
     .hero {
-
-
-        padding-top: 24px;
+        padding-top: 16px;
     }
 
     .slider{
@@ -429,7 +427,9 @@ margin: 0 auto;
     /* category */
     
     .category {
-        padding-top: 64px;
+
+
+        padding: 32px;
     }
     
     .title-wrapper {
@@ -437,7 +437,7 @@ margin: 0 auto;
         align-items: center;
         justify-content: center;
         gap: 25px;
-        margin-bottom: 36px;
+        margin-bottom: 32px;
     }
     
     .title-left-line {
@@ -459,7 +459,7 @@ margin: 0 auto;
     
     .title {
         text-align: center;
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .category-list {
@@ -531,7 +531,7 @@ margin: 0 auto;
     /* advantages */
     
     .advantages {
-        padding: 64px 0px;
+        padding: 16px 0px;
     }
     
     .advantages-list {
@@ -597,16 +597,9 @@ margin: 0 auto;
     
     /* about-shop */
     
+
     .about-shop {
-        padding: 48px 0px;
-        margin-bottom: 24px;
-    
-        /* background-color: rgb(205, 227, 245); */
-        /* background-color: rgb(217, 227, 232); */
-    }
-    
-    .about-shop {
-        padding: 48px 0px;
+        padding: 16px 0px;
         margin-bottom: 24px;
     }
     
@@ -649,6 +642,8 @@ margin: 0 auto;
         padding: 42px 0px;
         background-color: #000698;
     }
+
+  
     
     footer .container {
         display: flex;
@@ -656,6 +651,15 @@ margin: 0 auto;
         justify-content: space-between;
         align-items: center;
         gap: 24px;
+    }
+
+    .footer-main-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+       
     }
     
     .footer-top-wrapper {
@@ -2142,14 +2146,28 @@ margin: 0 auto;
     /* footer */
     
     footer {
+    
+    
         padding: 42px 0px;
         background-color: #000698;
     }
     
     footer .container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+
+        align-items: flex-end;
     }
+
+    .footer-main-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+  
     
     .footer-top-wrapper {
     
