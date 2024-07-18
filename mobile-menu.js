@@ -13,7 +13,7 @@ document.body.style.overflow = "hidden";
 
 closeBtn.addEventListener('click', handleCloseBurger);
 
-function  handleCloseBurger(){
+export function  handleCloseBurger(){
     mobileModal.classList.remove('burger-active');
     document.body.style.overflow = "visible";  
 }

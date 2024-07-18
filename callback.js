@@ -1,16 +1,22 @@
+import { handleCloseBurger } from "./mobile-menu.js";
+
 const backdrop = document.querySelector('.callback-backdrop');
 const modal = document.querySelector('.callback-modal');
 const form = document.querySelector('.callback-form');
 const closeBtn = document.querySelector('.close-btn-wrapper');
 const callbackBtn = document.querySelector('.callback-button-header');
+const callbackBtnMob = document.querySelector('.callback-button-header-mob');
+
 
 callbackBtn.addEventListener('click', onCallbackBtnClick);
+callbackBtnMob.addEventListener('click', onCallbackBtnClick);
 closeBtn.addEventListener('click', onCloseBtnClick);
 backdrop.addEventListener('click', onBackdropClick);
 form.addEventListener('submit', onFormSubmit);
 
 
 function onCallbackBtnClick() {
+    handleCloseBurger()
     backdrop.classList.add('active');
     document.body.addEventListener('keydown', onEscBtnPress);
 }
