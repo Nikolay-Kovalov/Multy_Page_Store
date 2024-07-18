@@ -316,6 +316,8 @@ margin: 0 auto;
         /* gap: 24px; */
         position: fixed;
         padding: 24px;
+        padding-top: 0;
+        padding-bottom: 36px;
         top: 0;
         left: 0;
         width: 100%;
@@ -381,7 +383,7 @@ margin: 0 auto;
     }
 
     .slider{
-        max-width: 436px;
+        max-width: 480px;
     }
     
     .slider-list {
